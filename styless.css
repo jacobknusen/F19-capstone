@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'kumbh sans', sans-serif;
+}
+/* this is the actual nav bar its self. we defined size width everything in here */
+ .navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+} 
+/* this is the container to hold all the nav bar info */
+ .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+} 
+ /*  navbar__logo =the  next logo in the top cornor */
+ #navbar__logo{
+    background-color: #302b2b;
+    background-image: linear-gradient(to top, black 0%, white 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items:center ;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+
+} */
+
+.fa-gem {
+    margin-right: 0.5rem;
+}
+/* this is what postions the different tabs in the nav bar  */
+ .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+} 
+/* defines the height of the container */
+ .navbar__item {
+    height: 80px;
+} 
+/* this is usinf flex box to postions are tabs how we want them  */
+ .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    width: 100%;
+ } 
+ /* postioning the sign up box where we want i think  */
+   .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0,  1rem;
+    width: 100%;
+}   
+/* styling for the sign up button.  */
+ .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: grey;
+    color: #fff;
+    }    
+    /* this give the hover over color on the  */
+.button:hover { 
+    background: green;
+    transition: all 0.3s ease;
+    }
+    /* this adds the hover color on the links which is the different tabs  */
+.navbar__links:hover {
+    color: lightseagreen;
+    transition: all 0.3s ease;
+}
+
+/* 1st mobile responce inbetween here */
+
+.main {
+    background-color: #141414;
+
+}
+
+ .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 50px;
+
+
+} 
+/* .main__content h1 = the next genertion text  */
+ .main__content h1 {
+    font: 4rem;
+    background-color: #545051;
+    background-image: linear-gradient(to top, #d5d2d3 0%, #ffb1 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+
+} 
+.main__content h2 {
+    font: 4rem;
+    background-color: #545051;
+    background-image: linear-gradient(to top, #d5d2d3 0%, #181718 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+.main__content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main__btn {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #d5d2d3 0%, #181718 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+/* this changes the a tag inside the button, from purple to white and changes size  */
+ .main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+ 
+ } 
+ .main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100;
+    background-color: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+.main__btn:hover {
+    width: 100%;
+
+}
+.main__img--container {
+    text-align: center;
+}
+
+#main__img {
+    height: 80%;
+    width: 80%;
+}
+/* services section css  this is were we add in containers size and fill them with the imgs */
+.services {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+.services h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #eed4da 0%, #181718 100%);
+    background-image: linear-gradient(to right, #eed4da 0%, #181718 0%,
+    #ff867a 0%,  #ff8c7f 21%, #f99185 52%, #cf556c 78%,#b12a5b 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+/* this moves the container we crated that the imgs well be going in  */
+ .services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #131313
+} 
+.services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6 ) 100%
+    ),
+    url('/images/alecs.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}  
+ /* this is the second photo we named in html nth child 2  */
+.services__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6 ) 100%
+    ),
+    url('/images/gunnarspic.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff
+}
+.services__card:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6 ) 100%
+    ),
+    url('/images/jakes.jpeg');
+    background-size: cover;
+    position: relative;
+    color: white;
+   object-fit: cover;
+   object-position: 100% 0;
+}
+.services__card:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6 ) 100%
+    ),
+    url('/images/sins1.jpeg');
+    background-size: cover;
+    position: relative;
+    color: white;
+   object-fit: cover;
+   object-position: 100% 0;
+}
+.services__card:nth-child(5) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6 ) 100%
+    ),
+    url('/images/carters.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+   object-fit: cover;
+   object-position: 100% 0;
+}
+
+.services h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+.services__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+
+}
+.services__card button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+
+}
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+/* movies all the h1 tags to the middle  */
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* random goal css */
+#random__container {
+    color: white;
+    
+    background-color: black;
+    border: 5px solid white;
+    height: 275px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+#randombtn {
+    
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #eed4da 0%, #181718 100%);
+    background-image: linear-gradient(to right, #eed4da 0%, #181718 0%,
+    #e9c0bc 0%,  #c6c3c2 21%, #7b7978 52%, #3f3d3d 78%,#262525 100%);
+}
+#output {
+    margin: 5px auto;
+    height: 25vh;
+    width: 250px;
+    font-size: 22px;
+
+}
+/* mission css */
+#compound {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+}
+.mis__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #131313
+} 
+.mis__card {
+    margin: 1rem;
+    height: 500px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(10, 20, 20, 0.6 ) 100%
+    ),
+    url('/images/mindful.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}  
+.mis__card:nth-child(1) {
+    
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(50, 50, 50, 0.6 ) 100%
+    ),
+    url('/images/mission.JPG');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+   object-fit: cover;
+   object-position: 100% 0;
+}
+.mis__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
